@@ -181,3 +181,15 @@ Para clonar um projeto deste repositório:
 ```git
 git clone F:\localhub
 ```
+
+Acessar o diretório criado na máquina local e nele inicializar o git
+```git
+git init
+```
+
+Configurar o repositório remoto
+```
+git remote add localhub F:
+```
+
+Para subir as alterações seguir os passos normais do git alterando apenas o nome do repositório remoto de origin para localhub
