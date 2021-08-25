@@ -78,7 +78,7 @@ git push -u origin NomeDaBranch
 
 ## Branchs
 
-- Listar branchs do repositório local
+- Listar branchs do repositório local, a branch em que estamos trabalhando terá um * na frente
 ```git
 git branch
 ```
