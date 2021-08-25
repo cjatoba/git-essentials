@@ -164,3 +164,20 @@ Os conflitos ocorrem quando enquanto modificamos algum arquivo em nosso reposit�
  ```
  git push -u origin main
  ```
+
+## Configurar diret처rio como um reposit처rio remoto
+
+Vamos utilizar como exemplo um diret처rio com o nome localhub que se encontra no caminho F:
+
+Acessar o diret처rio via terminal e digitar o comando abaixo:
+```
+cd F:/localhub
+```
+```git
+git init --bare
+```
+
+Para clonar um projeto deste reposit처rio:
+```git
+git clone F:\localhub
+```
