@@ -21,7 +21,7 @@ git config --global user.name "meu nome"
 
 ## Resolução de conflitos
 
-Os conflitos ocorrem quando realizamos um ´git pull´ ou git ´git clone´ e enquanto modificamos algum arquivo em nosso repositório local, outro desenvolvedor realiza alguma alteração na mesma linha do arquivo que modificamos, então ao realizar o `git push` o git informa que há um conflito. Nesses casos é necessário resolver o conflito manualmente seguindo os passos abaixo:
+Os conflitos ocorrem quando realizamos um `git pull` ou git `git clone` e enquanto modificamos algum arquivo em nosso repositório local, outro desenvolvedor realiza alguma alteração na mesma linha do arquivo que modificamos, então ao realizar o `git push` o git informa que há um conflito. Nesses casos é necessário resolver o conflito manualmente seguindo os passos abaixo:
 
  1. Puxar a versão do repositório remoto para o repositório local
   ```git
