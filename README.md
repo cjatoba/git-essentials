@@ -9,11 +9,10 @@ Lista de comandos e dicas git
 git config --global user.email "meuemail@mail.com"
 ```
 
-- Configura o musuário:
+- Configura o nome do usuário:
 ```
 git config --global user.name "meu nome"
 ```
-
 
 - Configuração para salvar o usuário e senha de forma permanente:
 ```
