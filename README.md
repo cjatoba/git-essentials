@@ -2,6 +2,14 @@
 
 Lista de comandos e dicas git
 
+Documentação do git: https://git-scm.com/book/pt-br/v2
+
+## Instalação
+
+- No Linux, seguir as orientações do endereço https://git-scm.com/download/linux
+- No MAC, seguir as orientações do endereço https://git-scm.com/download/mac
+- No Windows, baixar o executável no endereço https://git-scm.com/download/win
+
 ## Configurações iniciais
 
 - Configura o e-mail:
@@ -19,9 +27,112 @@ git config --global user.name "meu nome"
 git config --global user.name "meu nome"
 ```
 
+## Inicializar o git no projeto
+
+No terminal acessar a raiz do projeto e utilizar o comando:
+```git
+git init
+```
+
+Caso queira clonar um repositório remoto já existente:
+```git
+git clone enderecoDoRepositorioRemoto
+```
+
+## Gerenciamento do versionamento
+
+- Puxar atualizações do repositório remoto para o local
+```git
+git pull origin nomeDaBranch
+```
+
+- Verificar o status do projeto:
+```git
+git status
+```
+
+- Adicionar arquivos na área de stage
+```git
+git add .
+```
+
+- Commitar alterações
+```git
+git commit -m "Informação sobre o commit"
+```
+
+- Verificar o histórico de commits
+```git
+git log
+```
+
+- Retornar o projeto para um commit anterior (Perde todos os commits posteriores)
+```git
+git reset --hard hashDoCommit
+```
+
+- Subir commits para repositório remoto
+```git
+git push -u origin NomeDaBranch
+```
+
+## Branchs
+
+- Listar branchs do repositório local
+```git
+git branch
+```
+
+- Listar branchs do repositório local e remoto
+```git
+git branch -a
+```
+
+- Mudar de branch
+```git
+git checkout nomeDaBranch
+```
+
+- Criar nova branch e mudar para ela
+```git
+git checkout -b nomeDaBranch
+```
+
+- Excluir branch
+```git
+git branch -d nomeDaBranch
+```
+
+- Renomear branch atual
+```git
+git branch -m NovoNomeDaBranch
+```
+
+- Renomear branch diferente da atual
+```git
+git branch -m NomeAtualDaBranch NovoNomeDaBranch
+```
+
+## Repositórios
+
+- Lista os repositórios remotos:
+```git
+git remote -v
+```
+
+- Adicionar repositório remoto (origin neste exemplo será o alias que daremos ao repositório remoto, por convensão origin mas pode ser outro nome):
+```git
+git remote add origin https://github.com/usuario/repositorio
+```
+
+- Remover repositório remoto:
+```git
+git remote rm nomeDoRepositorio
+```
+
 ## Resolução de conflitos
 
-Os conflitos ocorrem quando realizamos um `git pull` ou git `git clone` e enquanto modificamos algum arquivo em nosso repositório local, outro desenvolvedor realiza alguma alteração na mesma linha do arquivo que modificamos, então ao realizar o `git push` o git informa que há um conflito. Nesses casos é necessário resolver o conflito manualmente seguindo os passos abaixo:
+Os conflitos ocorrem quando enquanto modificamos algum arquivo em nosso repositório local, outro desenvolvedor realiza alguma alteração na mesma linha do arquivo que modificamos, então ao realizar o `git push` o git informa que há um conflito. Nesses casos é necessário resolver o conflito manualmente seguindo os passos abaixo:
 
  1. Puxar a versão do repositório remoto para o repositório local
   ```git
