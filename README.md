@@ -66,9 +66,49 @@ git commit -m "Informação sobre o commit"
 git log
 ```
 
-- Retornar o projeto para um commit anterior (Perde todos os commits posteriores)
+- Salva as alterações ainda não commitadas "que estão da área de stage" e remove essas alterações do projeto
+````git
+git stash save "mensagem para lembrar o que foi salvo aqui"
+```
+
+- Lista todos os stashes salvos
+````git
+git stash list
+```
+
+- Carrega um stash salvo, nesse exemplo será carregado o stash {2} com base na saída do comando `git stash list`
+````git
+git stash pop stash@{2}
+```
+
+- Exibe o diff de um stash específico, nesse exemplo será carregado o stash {2} com base na saída do comando `git stash list`
+````git
+git stash show -p stash@{2}
+```
+
+- Voltar arquivo para o estado original desde o último commit
 ```git
-git reset --hard hashDoCommit
+git checkout -- arquivo.txt
+```
+
+- Resetar o repositório para o estado do último commit (O commit será desfeito mas as alterações nos arquivos ainda ficarão. Neste caso é necessário fazer um novo commit com o conteúdo do commit desfeito)
+```git
+git reset HEAD~1
+```
+
+- Criar um novo commit que faz o reverso do commit especificado (Pode ocorrer conflitos nesse processo)
+```git
+git revert idDoCommit
+```
+
+- Resetar o repositório para o estado do último commit desfazendo as alterações nos arquivos (O commit atual e todas as alterações dele serão removidas)
+```git
+git reset --hard HEAD~1
+```
+
+- Retornar o projeto para um commit anterior (Perde todos os commits na frente dele)
+```git
+git reset --hard idDoCommit
 ```
 
 - Subir commits para repositório remoto
