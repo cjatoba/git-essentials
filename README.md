@@ -10,12 +10,12 @@ Este repositório tem o objetivo de centralizar dicas e informações objetivas 
 
 ## Configurações iniciais
 
-- Configura o e-mail:
+- Configurar o e-mail:
 ```
 git config --global user.email "meuemail@mail.com"
 ```
 
-- Configura o nome do usuário:
+- Configurar o nome do usuário:
 ```
 git config --global user.name "meu nome"
 ```
@@ -27,7 +27,7 @@ git config --global user.name "meu nome"
 
 ## Inicializar o git no projeto
 
-No terminal acessar a raiz do projeto e utilizar o comando:
+Para um projeto novo já existente na máquina local, acessar a raiz do projeto e utilizar o comando:
 ```git
 git init
 ```
@@ -39,17 +39,17 @@ git clone enderecoDoRepositorioRemoto
 
 ## Fluxo de trabalho
 
-1. Acessar o repositório principal do projeto;
-2. Fazer um fork do projeto principal para o repositório pessoal;
+1. Acessar o repositório principal do projeto (Repositório da empresa ou projeto que queira contribuir);
+2. Fazer um fork do projeto principal para o repositório pessoal (Ao acessar o projeto no canto superior direito clicar no botão "Fork");
 3. Clonar o repositório pessoal para máquina local 
 ```git
 git clone <url do repositório do projeto da sua conta pessoal no git>
 ```
-4. Verificar em qual branch está atualmente (Geralmente será a branch master ou main);
+4. Verificar em qual branch está atualmente (Geralmente será a branch master ou main, nos exemplos posteriores vamos considerar como branch main);
 ```git
 git branch
 ```
-5. Criar uma branch onde serão realizadas as modificações, neste exemplo utizamos estamos nomeando esta branch como implementacao (Nunca fazer as modificações na branch principal);
+5. Criar uma branch onde serão realizadas as modificações, neste exemplo estamos nomeando esta branch como implementacao (Nunca fazer as modificações na branch principal);
 ```git
 git checkout -b implementacao
 ```
@@ -65,15 +65,15 @@ git add .
 ```git
 git commit -m "Descrição do que foi realizado"
 ```
-9. Verificar se existem alterações na branch principal para resolver quaisquer eventuais conflitos (Lembrando que upstream foi o nome dado ao repositório remoto no passo 6):
+9. Acessar a branch principal e com o comando pull puxar o estado atual dela para verificar se houveram modificações enquanto estávamos trabalhando na nossa branch local, e resolver quaisquer eventuais conflitos (Lembrando que upstream foi o nome dado ao repositório remoto no passo 6):
 ```git
 git checkout master
-git pull upstream master
+git pull upstream main
 ```
-10. Fazer o merge da branch master com a branch local que realizamos as modificações:
+10. Fazer o merge da branch principal com a branch local que realizamos as modificações:
 ```git
 git checkout implementacao
-git merge master
+git merge main
 ```
 11. Enviar nossas modificações para o nosso repositório remoto pessoal (Lembrando de sempre dar git add . e git commit antes de dar o push.):
 ```git
