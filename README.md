@@ -1,4 +1,4 @@
-# models_git
+# Git Essentials
 
 Lista de comandos e dicas git
 
