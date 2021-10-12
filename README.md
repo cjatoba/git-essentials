@@ -1,6 +1,6 @@
 # Git Essentials
 
-Lista de comandos e dicas git
+Este repositório tem o objetivo de centralizar dicas e informações onjetivas sobre o git, como fluxo de trabalho, exemplo de comandos etc.
 
 ## Instalação
 
@@ -36,6 +36,50 @@ Caso queira clonar um repositório remoto já existente:
 ```git
 git clone enderecoDoRepositorioRemoto
 ```
+
+## Fluxo de trabalho
+
+1. Acessar o repositório principal do projeto;
+2. Fazer um fork do projeto principal para o repositório pessoal;
+3. Clonar o repositório pessoal para máquina local 
+```git
+git clone <url do repositório do projeto da sua conta pessoal no git>
+```
+4. Verificar em qual branch está atualmente (Geralmente será a branch master ou main);
+```git
+git branch
+```
+5. Criar uma branch onde serão realizadas as modificações, neste exemplo utizamos estamos nomeando esta branch como implementacao (Nunca fazer as modificações na branch principal);
+```git
+git checkout -b implementacao
+```
+6. Configurar o repositório remoto (Repositório acessado no passo 1) para onde será enviado posteriormente o pull request (upstream foi o nome dado neste exemplo ao repositório remoto, mas pode ser qualquer outro nome);
+```git
+git remote add upstream <url para o repositório da sua organização>
+```
+7. Realizar as modificações necessárias na branch criada no passo 5 e ao terminar adicionar as alterações na área de stage;
+```git
+git add .
+```
+8. Commitar as modificações
+```git
+git commit -m "Descrição do que foi realizado"
+```
+9. Verificar se existem alterações na branch principal para resolver quaisquer eventuais conflitos (Lembrando que upstream foi o nome dado ao repositório remoto no passo 6):
+```git
+git checkout master
+git pull upstream master
+```
+10. Fazer o merge da branch master com a branch local que realizamos as modificações:
+```git
+git checkout implementacao
+git merge master
+```
+11. Enviar nossas modificações para o nosso repositório remoto pessoal (Lembrando de sempre dar git add . e git commit antes de dar o push.):
+```git
+git push origin implementacao
+```
+12. Criar um pull request no repositório principal do projeto (O mesmo repositório acessado no passo 1)
 
 ## Gerenciamento do versionamento
 
@@ -231,50 +275,6 @@ git remote add localhub F:
 ```
 
 Para subir as alterações seguir os passos normais do git alterando apenas o nome do repositório remoto de origin para localhub
-
-## Fluxo de trabalho
-
-1. Acessar o repositório principal do projeto;
-2. Fazer um fork do projeto principal para o repositório pessoal;
-3. Clonar o repositório pessoal para máquina local 
-```git
-git clone <url do repositório do projeto da sua conta pessoal no git>
-```
-4. Verificar em qual branch está atualmente (Geralmente será a branch master ou main);
-```git
-git branch
-```
-5. Criar uma branch onde serão realizadas as modificações, neste exemplo utizamos estamos nomeando esta branch como implementacao (Nunca fazer as modificações na branch principal);
-```git
-git checkout -b implementacao
-```
-6. Configurar o repositório remoto (Repositório acessado no passo 1) para onde será enviado posteriormente o pull request (upstream foi o nome dado neste exemplo ao repositório remoto, mas pode ser qualquer outro nome);
-```git
-git remote add upstream <url para o repositório da sua organização>
-```
-7. Realizar as modificações necessárias na branch criada no passo 5 e ao terminar adicionar as alterações na área de stage;
-```git
-git add .
-```
-8. Commitar as modificações
-```git
-git commit -m "Descrição do que foi realizado"
-```
-9. Verificar se existem alterações na branch principal para resolver quaisquer eventuais conflitos (Lembrando que upstream foi o nome dado ao repositório remoto no passo 6):
-```git
-git checkout master
-git pull upstream master
-```
-10. Fazer o merge da branch master com a branch local que realizamos as modificações:
-```git
-git checkout implementacao
-git merge master
-```
-11. Enviar nossas modificações para o nosso repositório remoto pessoal (Lembrando de sempre dar git add . e git commit antes de dar o push.):
-```git
-git push origin implementacao
-```
-12. Criar um pull request no repositório principal do projeto (O mesmo repositório acessado no passo 1)
 
 ## Fontes de informação
 
