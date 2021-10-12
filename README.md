@@ -238,9 +238,14 @@ Para subir as alterações seguir os passos normais do git alterando apenas o no
 
 1. Acessar o repositório principal do projeto;
 2. Fazer um fork do projeto principal para o repositório pessoal;
-3. Clonar o repositório pessoal para máquina local `git clone <url do repositório do projeto da sua conta pessoal no git>`;
-4. Verificar em qual branch está com o comando `git branch` (Geralmente será a branch master ou main);
-5. Criar uma branch onde serão realizadas as modificações `git checkout -b <nome da branch>` (Nunca fazer as modificações na branch principal);
-6. Configurar o repositório remoto (Repositório acessado no passo 1) para onde será enviado posteriormente o pull request `git remote add upstream <url para o repositório da sua organização>` (upstream foi o nome dado neste exemplo ao repositório remoto, mas pode ser qualquer outro nome);
-7. Realizar as modificações necessárias na branch criada no passo 5 e ao terminar adicionar as alterações na área de stage com o comando `git add .`;
+3. Clonar o repositório pessoal para máquina local 
+```git clone <url do repositório do projeto da sua conta pessoal no git>```
+4. Verificar em qual branch está atualmente (Geralmente será a branch master ou main);
+```git branch```
+5. Criar uma branch onde serão realizadas as modificações (Nunca fazer as modificações na branch principal);
+```git checkout -b <nome da branch>```
+6. Configurar o repositório remoto (Repositório acessado no passo 1) para onde será enviado posteriormente o pull request (upstream foi o nome dado neste exemplo ao repositório remoto, mas pode ser qualquer outro nome);
+```git remote add upstream <url para o repositório da sua organização>```
+7. Realizar as modificações necessárias na branch criada no passo 5 e ao terminar adicionar as alterações na área de stage;
+```git add .```
 
