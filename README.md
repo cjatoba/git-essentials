@@ -1,6 +1,6 @@
 # Git Essentials
 
-Este repositório tem o objetivo de centralizar dicas e informações onjetivas sobre o git, como fluxo de trabalho, exemplo de comandos etc.
+Este repositório tem o objetivo de centralizar dicas e informações objetivas sobre o git, como fluxo de trabalho, exemplo de comandos etc.
 
 ## Instalação
 
