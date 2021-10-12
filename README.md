@@ -67,22 +67,22 @@ git log
 ```
 
 - Salva as alterações ainda não commitadas "que estão da área de stage" e remove essas alterações do projeto
-````git
+```git
 git stash save "mensagem para lembrar o que foi salvo aqui"
 ```
 
 - Lista todos os stashes salvos
-````git
+```git
 git stash list
 ```
 
 - Carrega um stash salvo, nesse exemplo será carregado o stash {2} com base na saída do comando `git stash list`
-````git
+```git
 git stash pop stash@{2}
 ```
 
 - Exibe o diff de um stash específico, nesse exemplo será carregado o stash {2} com base na saída do comando `git stash list`
-````git
+```git
 git stash show -p stash@{2}
 ```
 
