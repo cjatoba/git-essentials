@@ -8,7 +8,7 @@ Este repositório tem o objetivo de centralizar dicas e informações objetivas 
 - No MAC, seguir as orientações do endereço https://git-scm.com/download/mac
 - No Windows, baixar o executável no endereço https://git-scm.com/download/win
 
-## Configurações iniciais
+## Configurações
 
 - Configurar o e-mail:
 ```
@@ -25,9 +25,15 @@ git config --global user.name "meu nome"
 git config --global credential.helper store
 ```
 
-- Listar todas as configurações
+- Listar todas as configurações:
 ```git
 git config -l
+```
+
+- Remover configuração global (Neste exemplo serão removidos o user.name e user.email):
+```git
+git config --global --unset user.name
+git config --global --unset user.email
 ```
 
 ## Inicializar o git no projeto
