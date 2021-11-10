@@ -289,6 +289,16 @@ Para subir as alterações seguir os passos normais do git alterando apenas o no
 
 ## Gitflow
 
+## Fluxo geral
+
+- Uma ramificação develop é criada a partir da main
+- Uma ramificação de lançamento é criada a partir da ramificação de desenvolvimento
+- As ramificações de recurso são criadas a partir da ramificação de desenvolvimento
+- Quando um recurso é concluído, ele é mesclado na ramificação de desenvolvimento
+- Quando a ramificação release é feita, é feito o merge dela na ramificação develop e na principal
+- Se for detectado um bug na main, uma ramificação de hotfix vai ser criada a partir da main
+- Depois que o hotfix for concluído, ele passa por merge para a ramificação develop e à main
+
 Iniciar a git no projeto e criar as ramificações:
 ```git
 git flow init
@@ -307,6 +317,20 @@ git flow feature finish feature_branch
 Após a finalização das features da branch develop, iniciar a ramificação de release:
 ```git
 git flow release start 0.1.0
+```
+
+Finalizar a ramificação de release:
+```git
+git flow release finish '0.1.0'
+```
+
+### Ramificações de hotfix
+
+As ramificações de manutenção ou de “hotfix” são usadas para corrigir com rapidez lançamentos de produção.
+
+Criar ramificação de hotfix:
+```git
+git flow hotfix start hotfix_branch
 ```
 
 ## Fontes de informação
