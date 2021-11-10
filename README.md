@@ -289,6 +289,8 @@ Para subir as alterações seguir os passos normais do git alterando apenas o no
 
 ## Gitflow
 
+![image](https://user-images.githubusercontent.com/52887959/141200068-b722de7c-e143-40cc-afcf-b4a9d272179a.png)
+
 ## Fluxo geral
 
 - Uma ramificação develop é criada a partir da main
