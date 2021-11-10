@@ -22,7 +22,7 @@ git config --global user.name "meu nome"
 
 - Configuração para salvar o usuário e senha de forma permanente:
 ```
-git config --global user.name "meu nome"
+git config --global credential.helper store
 ```
 
 - Listar todas as configurações
