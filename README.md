@@ -287,7 +287,30 @@ git remote add localhub F:
 
 Para subir as alterações seguir os passos normais do git alterando apenas o nome do repositório remoto de origin para localhub
 
+## Gitflow
+
+Iniciar a git no projeto e criar as ramificações:
+```git
+git flow init
+```
+
+Criar branch feature:
+```git
+git flow feature start feature_branch
+```
+
+Finalizar a feature e aesclar com a branch develop:
+```git
+git flow feature finish feature_branch
+```
+
+Após a finalização das features da branch develop, iniciar a ramificação de release:
+```git
+git flow release start 0.1.0
+```
+
 ## Fontes de informação
 
 https://git-scm.com/book/pt-br/v2
 https://medium.com/@danilocarva9/git-workflow-guia-passo-a-passo-9dfda241ca1
+https://www.atlassian.com/br/git/tutorials/comparing-workflows/gitflow-workflow#:~:text=Gitflow%20Workflow%20%C3%A9%20um%20design,robusta%20para%20gerenciar%20projetos%20maiores.
