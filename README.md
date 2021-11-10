@@ -289,7 +289,7 @@ Para subir as alterações seguir os passos normais do git alterando apenas o no
 
 ## Gitflow
 
-![image](https://user-images.githubusercontent.com/52887959/141200068-b722de7c-e143-40cc-afcf-b4a9d272179a.png)
+![image](https://wac-cdn.atlassian.com/dam/jcr:cc0b526e-adb7-4d45-874e-9bcea9898b4a/04%20Hotfix%20branches.svg?cdnVersion=76)
 
 ## Fluxo geral
 
