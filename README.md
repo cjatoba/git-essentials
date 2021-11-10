@@ -25,6 +25,11 @@ git config --global user.name "meu nome"
 git config --global user.name "meu nome"
 ```
 
+- Listar todas as configurações
+```git
+git config --list
+```
+
 ## Inicializar o git no projeto
 
 Para um projeto novo já existente na máquina local, acessar a raiz do projeto e utilizar o comando:
