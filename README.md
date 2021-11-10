@@ -27,7 +27,7 @@ git config --global credential.helper store
 
 - Listar todas as configurações
 ```git
-git config --list
+git config -l
 ```
 
 ## Inicializar o git no projeto
