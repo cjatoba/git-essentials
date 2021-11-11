@@ -306,15 +306,19 @@ Iniciar a git no projeto e criar as ramificações:
 git flow init
 ```
 
+## Ramificações de feature
+
 Criar branch feature:
 ```git
 git flow feature start feature_branch
 ```
 
-Finalizar a feature e aesclar com a branch develop:
+Finalizar a feature e mesclar com a branch develop:
 ```git
 git flow feature finish feature_branch
 ```
+
+## Ramificações de release
 
 Após a finalização das features da branch develop, iniciar a ramificação de release:
 ```git
@@ -333,6 +337,11 @@ As ramificações de manutenção ou de “hotfix” são usadas para corrigir c
 Criar ramificação de hotfix:
 ```git
 git flow hotfix start hotfix_branch
+```
+
+Finalizar a ramificação de hotfix
+```git
+git flow hotfix finish hotfix_branch
 ```
 
 ## Fontes de informação
