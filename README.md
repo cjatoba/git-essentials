@@ -355,7 +355,7 @@ O erro fatal: refusing to merge unrelated histories geralmente acontece quando v
 Para permitir que o Git faça o merge de dois projetos com históricos diferentes, é só passar o parâmetro --allow-unrelated-histories quando for fazer o pull, assim:
 
 ```git
-git pull origin master --allow-unrelated-histories
+git pull origin main --allow-unrelated-histories
 ```
 
 ## Fontes de informação
