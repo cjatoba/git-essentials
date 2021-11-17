@@ -344,8 +344,23 @@ Finalizar a ramificação de hotfix
 git flow hotfix finish hotfix_branch
 ```
 
+## Correção de erros
+
+### fatal: refusing to merge unrelated histories
+
+Desde o Release 2.9.0, o Git parou de permitir o merge automático de projetos que possuem históricos Git diferentes.
+
+O erro fatal: refusing to merge unrelated histories geralmente acontece quando você tenta fazer o git pull de um repositório remoto, mas o seu repositório local possuí um histórico de commits, branches, etc, diferente do que está no repositório remoto.
+
+Para permitir que o Git faça o merge de dois projetos com históricos diferentes, é só passar o parâmetro --allow-unrelated-histories quando for fazer o pull, assim:
+
+```git
+git pull origin master --allow-unrelated-histories
+```
+
 ## Fontes de informação
 
 https://git-scm.com/book/pt-br/v2
 https://medium.com/@danilocarva9/git-workflow-guia-passo-a-passo-9dfda241ca1
 https://www.atlassian.com/br/git/tutorials/comparing-workflows/gitflow-workflow#:~:text=Gitflow%20Workflow%20%C3%A9%20um%20design,robusta%20para%20gerenciar%20projetos%20maiores.
+https://community.umbler.com/br/t/resolvendo-o-erro-fatal-refusing-to-merge-unrelated-histories-no-git/657
