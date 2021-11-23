@@ -119,9 +119,9 @@ git commit -m "Informação sobre o commit"
 git log
 ```
 
-- Verificar alterações em um commit em específico (O --color --pretty=format:%b destaca as alterações em verde e vermelho para facilitar a visualização);
+- Verificar alterações em um commit em específico (O --color destaca as alterações em verde e vermelho para facilitar a visualização);
 ```
-git show --color --pretty=format:%b id_do_commit
+git show --color id_do_commit
 ```
 
 - Salva as alterações ainda não commitadas "que estão da área de stage" e remove essas alterações do projeto
