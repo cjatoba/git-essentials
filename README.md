@@ -245,20 +245,30 @@ Os conflitos ocorrem quando enquanto modificamos algum arquivo em nosso reposit�
   Aqui ficará o código que foi editado por outro desenvolvedor
 >>>>>>> dsadad6975970875750950975975s975c97597597
 ```
+
+3. Aplicar automaticamente apenas as alterações locais descartando as alterações remotas
+```git
+git checkout --ours file_name
+```
+
+4. Aplicar automaticamente apenas as alterações locais descartando as alterações remotas
+```git
+git checkout ----theirs file_name
+```
  
- 3. Remover as tags de marcação do GIT, manter apenas o código que o arquivo deve conter e salvar o arquivo;
+ 5. Remover as tags de marcação do GIT, manter apenas o código que o arquivo deve conter e salvar o arquivo;
  
- 4. Adicionar o arquivo modificado na área de stage
+ 6. Adicionar o arquivo modificado na área de stage
  ```git
  git add .
  ```
  
- 5. Commitar
+ 7. Commitar
  ```git
  git commit -m "Resolução de conflitos"
  ```
  
- 6. Subir as alterações para o repositório rmeoto
+ 8. Subir as alterações para o repositório rmeoto
  ```
  git push -u origin main
  ```
