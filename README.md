@@ -268,7 +268,7 @@ git checkout ----theirs file_name
  git commit -m "Resolução de conflitos"
  ```
  
- 8. Subir as alterações para o repositório rmeoto
+ 8. Subir as alterações para o repositório remoto
  ```
  git push -u origin main
  ```
