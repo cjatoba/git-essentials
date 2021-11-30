@@ -25,6 +25,11 @@ git config --global user.name "meu nome"
 git config --global credential.helper store
 ```
 
+- Habilitar as saídas do terminal com cores (Caso não esteja habilitado por padrão)
+```git
+git config --global color.ui true
+```
+
 - Listar todas as configurações:
 ```git
 git config -l
