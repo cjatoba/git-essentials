@@ -58,4 +58,4 @@ git flow hotfix finish hotfix_branch
 
 ## Fontes de informação
 
-- https://www.atlassian.com/br/git/tutorials/comparing-workflows/gitflow-workflow#:~:text=Gitflow%20Workflow%20%C3%A9%20um%20design,robusta%20para%20gerenciar%20projetos%20maiores.
+- https://www.atlassian.com/br/git/tutorials/comparing-workflows/gitflow-workflow#:~:text=Gitflow%20Workflow%20%C3%A9%20um%20design,robusta%20para%20gerenciar%20projetos%20maiores
