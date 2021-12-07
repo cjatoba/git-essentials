@@ -251,14 +251,14 @@ Os conflitos ocorrem quando enquanto modificamos algum arquivo em nosso reposit�
 >>>>>>> dsadad6975970875750950975975s975c97597597
 ```
 
-3. Aplicar automaticamente apenas as alterações locais descartando as alterações remotas
+3. Aplicar as alterações locais descartando as remotas
 ```git
 git checkout --ours file_name
 ```
 
-4. Aplicar automaticamente apenas as alterações locais descartando as alterações remotas
+4. Aplicar as alterações remotas descartando as locais
 ```git
-git checkout ----theirs file_name
+git checkout --theirs file_name
 ```
  
  5. Remover as tags de marcação do GIT, manter apenas o código que o arquivo deve conter e salvar o arquivo;
