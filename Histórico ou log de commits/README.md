@@ -28,8 +28,9 @@ git log -S Filter
 git log --grep keyword
 ```
 
-## Limita o periodo do log em um período (Primeiro exemplo) ou a partir de uma determinada data (Segundo exemplo):
+## Limita o periodo do log em um período (Primeiro exemplo) ou antes ou depois de uma determinada data (Segundo e Terceiro exemplo):
 ```git
 git log --since=1.month.ago --until=3.weeks.ago
-git log -S mentorship --before="1 Jan 2020"
+git log --before="1 Jan 2020"
+git log --after="1 Jan 2020"
 ```
