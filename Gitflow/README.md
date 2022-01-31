@@ -5,7 +5,7 @@
 ## Fluxo geral
 
 - Uma ramificação develop (desenvolvimento) é criada a partir da main
-- Uma ramificação de release (lançamento) é criada a partir da ramificação de desenvolvimento
+- Uma ramificação de release (lançamento/homologação) é criada a partir da ramificação de desenvolvimento
 - As ramificações de feature (recurso) são criadas a partir da ramificação de desenvolvimento
 - Quando um recurso é concluído, ele é mesclado na ramificação de develop
 - Quando a ramificação release é feita, é feito o merge dela na ramificação develop e na principal
