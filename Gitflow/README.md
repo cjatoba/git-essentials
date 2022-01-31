@@ -4,13 +4,13 @@
 
 ## Fluxo geral
 
-- Uma ramificação develop é criada a partir da main
-- Uma ramificação de lançamento é criada a partir da ramificação de desenvolvimento
-- As ramificações de recurso são criadas a partir da ramificação de desenvolvimento
-- Quando um recurso é concluído, ele é mesclado na ramificação de desenvolvimento
+- Uma ramificação develop (desenvolvimento) é criada a partir da main
+- Uma ramificação de release (lançamento) é criada a partir da ramificação de desenvolvimento
+- As ramificações de feature (recurso) são criadas a partir da ramificação de desenvolvimento
+- Quando um recurso é concluído, ele é mesclado na ramificação de develop
 - Quando a ramificação release é feita, é feito o merge dela na ramificação develop e na principal
 - Se for detectado um bug na main, uma ramificação de hotfix vai ser criada a partir da main
-- Depois que o hotfix for concluído, ele passa por merge para a ramificação develop e à main
+- Depois que o hotfix for concluído, ele passa por merge para as ramificações develop e main
 
 Iniciar a git no projeto e criar as ramificações:
 ```git
