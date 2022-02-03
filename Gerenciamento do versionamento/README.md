@@ -70,7 +70,7 @@ git checkout nome_da_branch
 git push -u origin NomeDaBranch
 ```
 
-### (Aviso) Comandos perigosos que mexem na estrutura do histórico de versionamento
+<h3 style='color:red'>(Aviso) Comandos perigosos que mexem na estrutura do histórico de versionamento</h3>
 
 - Resetar o repositório para o estado do último commit (O commit será desfeito mas as alterações nos arquivos ainda ficarão. Neste caso é necessário fazer um novo commit com o conteúdo do commit desfeito)
 ```git
