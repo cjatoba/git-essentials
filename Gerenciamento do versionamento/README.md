@@ -55,14 +55,26 @@ git stash show -p stash@{2}
 git checkout -- arquivo.txt
 ```
 
+- Navegar entre commits, voltando o código a versões de commits anteriores:
+```git
+git checkout id_do_commit
+```
+
+- Voltar o código a versão original de uma branch:
+```git
+git checkout nome_da_branch
+```
+
+- Subir commits para repositório remoto
+```git
+git push -u origin NomeDaBranch
+```
+
+### (Aviso) Comandos perigosos que mexem na estrutura do histórico de versionamento
+
 - Resetar o repositório para o estado do último commit (O commit será desfeito mas as alterações nos arquivos ainda ficarão. Neste caso é necessário fazer um novo commit com o conteúdo do commit desfeito)
 ```git
 git reset HEAD~1
-```
-
-- Criar um novo commit que faz o reverso do commit especificado (Pode ocorrer conflitos nesse processo)
-```git
-git revert idDoCommit
 ```
 
 - Resetar o repositório para o estado do último commit desfazendo as alterações nos arquivos (O commit atual e todas as alterações dele serão removidas)
@@ -75,7 +87,7 @@ git reset --hard HEAD~1
 git reset --hard idDoCommit
 ```
 
-- Subir commits para repositório remoto
+- Criar um novo commit que faz o reverso do commit especificado (Pode ocorrer conflitos nesse processo)
 ```git
-git push -u origin NomeDaBranch
+git revert idDoCommit
 ```
