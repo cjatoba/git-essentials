@@ -30,9 +30,14 @@ git log
 git show --color id_do_commit
 ```
 
-- Salva as alterações ainda não commitadas "que estão da área de stage" e remove essas alterações do projeto
+- Salva as alterações sem commit (tanto as que estão na stage area quanto as que não estão) para uso posterior e as reverte para o estado anterior sem modificações;
 ```git
 git stash save "mensagem para lembrar o que foi salvo aqui"
+```
+
+- Salva as alterações de um arquivo específico e reverte para o estado anterior sem modificações;
+```git
+git stash push -m welcome_cart app/views/cart/welcome.thtml
 ```
 
 - Lista todos os stashes salvos
@@ -40,9 +45,14 @@ git stash save "mensagem para lembrar o que foi salvo aqui"
 git stash list
 ```
 
-- Carrega um stash salvo, nesse exemplo será carregado o stash {2} com base na saída do comando `git stash list`
+- Carrega um stash salvo, nesse exemplo será carregado o stash {2} com base na saída do comando `git stash list`, e deleta este stash;
 ```git
 git stash pop stash@{2}
+```
+
+- Carrega um stash salvo, nesse exemplo será carregado o stash {0} com base na saída do comando `git stash list`, e mantém este stash salvo;
+```git
+git stash apply stash@{0}
 ```
 
 - Exibe o diff de um stash específico, nesse exemplo será carregado o stash {2} com base na saída do comando `git stash list`
