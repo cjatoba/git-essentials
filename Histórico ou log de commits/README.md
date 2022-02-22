@@ -28,6 +28,11 @@ git log -S Filter
 git log --grep keyword
 ```
 
+## Filtra o resultado do git log por um ou mais autores:
+```git
+git log --author='\(Adam\)\|\(Jon\)'
+```
+
 ## Limita o periodo do log em um período (Primeiro exemplo) ou antes ou depois de uma determinada data (Segundo e Terceiro exemplo):
 ```git
 git log --since=1.month.ago --until=3.weeks.ago
