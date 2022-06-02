@@ -20,9 +20,14 @@ git checkout nomeDaBranch
 git checkout -b nomeDaBranch
 ```
 
-- Excluir branch
+- Excluir branch local
 ```git
 git branch -d nomeDaBranch
+```
+
+- Remove remote branch
+```git
+git push origin --delete branch_name
 ```
 
 - Renomear branch atual
