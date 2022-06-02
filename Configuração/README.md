@@ -35,7 +35,7 @@ git config --global --unset user.email
 ```git
 ssh-keygen -t ed25519 -C "your_email@example.com" 
 
-//In legacy system
+//Or in legacy system
 ssh-keygen -t rsa -b 4096 -C "your_email@example.com"
 ```
 
