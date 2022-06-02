@@ -34,6 +34,9 @@ git config --global --unset user.email
 - Generate ssh key
 ```git
 ssh-keygen -t ed25519 -C "your_email@example.com" 
+
+//In legacy system
+ssh-keygen -t rsa -b 4096 -C "your_email@example.com"
 ```
 
 - Configure specific ssh key in project
