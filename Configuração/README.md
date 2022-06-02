@@ -30,3 +30,13 @@ git config -l
 git config --global --unset user.name
 git config --global --unset user.email
 ```
+
+- Generate ssh key
+```git
+ssh-keygen -t ed25519 -C "your_email@example.com" 
+```
+
+- Configure specific ssh key in project
+```git
+git config core.sshCommand "ssh -i ~/.ssh/ssh_key_name -F /dev/null"
+```
