@@ -28,7 +28,7 @@ git commit -m "Descrição do que foi realizado"
 ```
 9. Acessar a branch principal e com o comando pull puxar o estado atual dela para verificar se houveram modificações enquanto estávamos trabalhando na nossa branch local, e resolver quaisquer eventuais conflitos (Lembrando que upstream foi o nome dado ao repositório remoto no passo 6):
 ```git
-git checkout master
+git checkout main
 git pull upstream main
 ```
 10. Fazer o merge da branch principal com a branch local que realizamos as modificações:
