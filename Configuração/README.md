@@ -10,6 +10,11 @@ git config --global user.email "meuemail@mail.com"
 git config --global user.name "meu nome"
 ```
 
+- Configurar vim como editor padrão:
+```
+git config --global core.editor vim
+```
+
 - Configuração para salvar o usuário e senha de forma permanente:
 ```
 git config --global credential.helper store
