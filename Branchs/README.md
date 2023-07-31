@@ -30,7 +30,12 @@ git branch -d nomeDaBranch
 git push origin --delete branch_name
 ```
 
-- Renomear branch atual
+- Renomear branch local diferente da atual
+```git
+git branch -m NomeAtualDaBranch NovoNomeDaBranch
+```
+
+- Renomear branch local atual
 ```git
 git branch -m NovoNomeDaBranch
 ```
@@ -48,9 +53,4 @@ git push origin --delete old-branch-name
 
 //Enviar a nova branch
 git push origin -u new-branch-name
-```
-
-- Renomear branch diferente da atual
-```git
-git branch -m NomeAtualDaBranch NovoNomeDaBranch
 ```
