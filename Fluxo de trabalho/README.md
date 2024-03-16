@@ -1,7 +1,7 @@
 ## Fluxo de trabalho
 
 1. Acessar o repositório principal do projeto (Repositório da empresa ou projeto que queira contribuir);
-2. Fazer um fork do projeto principal para o repositório pessoal (Ao acessar o projeto no canto superior direito clicar no botão "Fork");
+2. Caso seja um repositório de terceiros fazer um fork do projeto principal para o repositório pessoal (Ao acessar o projeto no canto superior direito clicar no botão "Fork");
 3. Clonar o repositório pessoal para máquina local 
 ```git
 git clone <url do repositório do projeto da sua conta pessoal no git>
@@ -16,11 +16,11 @@ git checkout -b implementacao
 ```
 6. Configurar o repositório remoto (Repositório acessado no passo 1) para onde será enviado posteriormente o pull request (upstream foi o nome dado neste exemplo ao repositório remoto, mas pode ser qualquer outro nome);
 ```git
-git remote add upstream <url para o repositório da sua organização>
+git remote add origin <url para o repositório da sua organização>
 ```
 7. Realizar as modificações necessárias na branch criada no passo 5 e ao terminar adicionar as alterações na área de stage;
 ```git
-git add .
+git add -A
 ```
 8. Commitar as modificações
 ```git
@@ -29,7 +29,7 @@ git commit -m "Descrição do que foi realizado"
 9. Acessar a branch principal e com o comando pull puxar o estado atual dela para verificar se houveram modificações enquanto estávamos trabalhando na nossa branch local, e resolver quaisquer eventuais conflitos (Lembrando que upstream foi o nome dado ao repositório remoto no passo 6):
 ```git
 git checkout main
-git pull upstream main
+git pull origin main
 ```
 10. Fazer o merge da branch principal com a branch local que realizamos as modificações:
 ```git
