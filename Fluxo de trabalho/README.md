@@ -10,11 +10,11 @@ git clone <url do repositório do projeto da sua conta pessoal no git>
 ```git
 git branch
 ```
-5. Criar uma branch onde serão realizadas as modificações, neste exemplo estamos nomeando esta branch como implementacao (Nunca fazer as modificações na branch principal);
+5. Criar uma branch onde serão realizadas as modificações, neste exemplo estamos nomeando esta branch como feat/new-feature (Nunca fazer as modificações na branch principal);
 ```git
-git checkout -b implementacao
+git checkout -b feat/new-feature
 ```
-6. Configurar o repositório remoto (Repositório acessado no passo 1) para onde será enviado posteriormente o pull request (upstream foi o nome dado neste exemplo ao repositório remoto, mas pode ser qualquer outro nome);
+6. Configurar o repositório remoto (Repositório acessado no passo 1) para onde será enviado posteriormente o pull request (origin foi o nome dado neste exemplo ao repositório remoto, é um nome convencional, mas pode ser qualquer outro nome);
 ```git
 git remote add origin <url para o repositório da sua organização>
 ```
